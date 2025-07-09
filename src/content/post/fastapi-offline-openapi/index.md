@@ -2,6 +2,7 @@
 title: "fastapi openapi ui 离线方案"
 description: "fastapi openapi ui 离线方案, 支持 swagger ui, scalar ui"
 publishDate: "2025-07-07"
+updatedDate: "2025-07-09"
 tags: ["fastapi", "openapi", "swagger", "scalar"]
 ---
 
@@ -53,7 +54,9 @@ def swagger(
 
 ```
 
-## 2. scalar ui
+## 2. scalar ui[^1]
+
+[^1]: [scalar ui 离线方案，基于scalar ui 官方库实现，点击查看官方说明](https://github.com/scalar/scalar/blob/main/integrations/fastapi/README.md)
 
 ```python title="scalar.py" showLineNumbers
 import json
