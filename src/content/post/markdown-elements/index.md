@@ -1,109 +1,172 @@
 ---
-title: "A post of Markdown elements"
-description: "This post is for testing and listing a number of different markdown elements"
-publishDate: "22 Feb 2023"
-updatedDate: 22 Jan 2024
+title: "Markdown元素"
+description: "展示多种不同的Markdown元素"
+publishDate: "2023-02-22"
 seriesId: "markdown-elements"
 orderInSeries: 1
-tags: ["test", "markdown"]
+tags: ["markdown"]
 draft: true
 ---
+```md
+# 一级标题
+```
+# 一级标题
+```md
+## 二级标题
+```
+## 二级标题
+```md
+### 三级标题
+```
+### 三级标题
+```md
+#### 四级标题
+```
+#### 四级标题
+```md
+##### 五级标题
+```
+##### 五级标题
+```md
+###### 六级标题
+```
+###### 六级标题
 
-# This is a H1 Heading
+## 水平分割线
+```md
+---
 
-## This is a H2 Heading
-
-### This is a H3 Heading
-
-#### This is a H4 Heading
-
-##### This is a H5 Heading
-
-###### This is a H6 Heading
-
-## Horizontal Rules
-
+---
+```
 ---
 
 ---
 
----
+## 文字强调
+```md
+**加粗文本**
+```
+**加粗文本**
+```md
+_斜体文本_
+```
+_斜体文本_
+```md
+~~删除线~~
+```
+~~删除线~~
 
-## Emphasis
+## 引号
+```md
+"双引号" 和 '单引号'
+```
+"双引号" 和 '单引号'
 
-**This is bold text**
-
-_This is italic text_
-
-~~Strikethrough~~
-
-## Quotes
-
-"Double quotes" and 'single quotes'
-
-## Blockquotes
-
-> Blockquotes can also be nested...
+## 块引用
+```md
+> 块引用可以嵌套...
 >
-> > ...by using additional greater-than signs right next to each other...
+> > ...通过连续使用大于号实现...
+```
+> 块引用可以嵌套...
+>
+> > ...通过连续使用大于号实现...
 
-## References
+## 参考文献
+```md
+包含可点击参考文献[^1]的示例，链接到来源。
 
-An example containing a clickable reference[^1] with a link to the source.
+第二个包含参考文献[^2]的示例，链接到来源。
 
-Second example containing a reference[^2] with a link to the source.
+[^1]: 第一个脚注，包含返回内容链接。
+[^2]: 第二个脚注，包含链接。
 
-[^1]: Reference first footnote with a return to content link.
+如果你查看`src/content/post/markdown-elements/index.md`中的示例，会发现通过[remark-rehype](https://github.com/remarkjs/remark-rehype#options)插件，"脚注"标题和参考文献会自动添加到页面底部。
+```
+包含可点击参考文献[^1]的示例，链接到来源。
 
-[^2]: Second reference with a link.
+第二个包含参考文献[^2]的示例，链接到来源。
 
-If you check out this example in `src/content/post/markdown-elements/index.md`, you'll notice that the references and the heading "Footnotes" are added to the bottom of the page via the [remark-rehype](https://github.com/remarkjs/remark-rehype#options) plugin.
+[^1]: 第一个脚注，包含返回内容链接。
+[^2]: 第二个脚注，包含链接。
 
-## Lists
+如果你查看`src/content/post/markdown-elements/index.md`中的示例，会发现通过[remark-rehype](https://github.com/remarkjs/remark-rehype#options)插件，"脚注"标题和参考文献会自动添加到页面底部。
 
-Unordered
+## 列表
 
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
+### 无序列表
+```md
+- 使用`+`、`-`或`*`开始一行创建列表
+- 通过缩进2个空格创建子列表：
+  - 标记字符变化会强制开始新列表：
     - Ac tristique libero volutpat at
     - Facilisis in pretium nisl aliquet
     - Nulla volutpat aliquam velit
-- Very easy!
+- 非常简单！
+```
+- 使用`+`、`-`或`*`开始一行创建列表
+- 通过缩进2个空格创建子列表：
+  - 标记字符变化会强制开始新列表：
+    - Ac tristique libero volutpat at
+    - Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- 非常简单！
 
-Ordered
+### 有序列表
+```md
+可以使用连续数字...
 
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+1. 可以使用连续数字...
+2. Lorem ipsum dolor sit amet
+3. Consectetur adipiscing elit
+4. Integer molestie lorem at massa
 
-4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
+或者全部使用`1.`
 
-Start numbering with offset:
+1. 或者全部使用`1.`
+1. 或者全部使用`1.`
+
+从指定数字开始：
+
+57. foo
+1. bar
+```
+可以使用连续数字...
+
+1. 可以使用连续数字...
+2. Lorem ipsum dolor sit amet
+3. Consectetur adipiscing elit
+4. Integer molestie lorem at massa
+
+或者全部使用`1.`
+
+1. 或者全部使用`1.`
+1. 或者全部使用`1.`
+
+从指定数字开始：
 
 57. foo
 1. bar
 
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
-
-```
-Sample text here...
+## 代码
+### 行内代码
+```md
+行内`代码`
 ```
 
-Syntax highlighting
+### 缩进代码
+    // 一些注释
+    第一行代码
+    第二行代码
+    第三行代码
 
+### 代码块
+```
+示例文本...
+```
+
+
+### 语法高亮
 ```js
 var foo = function (bar) {
 	return bar++;
@@ -114,76 +177,76 @@ console.log(foo(5));
 
 ### Rehype Pretty Code
 
-Adding a title
+添加标题
 
 ```js title="file.js"
-console.log("Title example");
+console.log("标题示例");
 ```
 
-A bash terminal
+Bash终端
 
 ```bash
-echo "A base terminal example"
+echo "基础终端示例"
 ```
 
-Highlighting code lines
+代码行高亮
 
 ```js title="line-markers.js" {7} {4-5}#add {3}#remove
 function demo() {
-    console.log("this line is normal");
-    console.log("this line is marked as deleted");
-    // This line and the next one are marked as inserted
-    console.log("this is the second inserted line");
+    console.log("这行是普通显示");
+    console.log("这行标记为删除");
+    // 这行和下一行标记为新增
+    console.log("这是第二行新增内容");
 
-    return "this line uses the neutral default marker type";
+    return "这行使用中性默认标记类型";
 }
 ```
 
-Line Numbers
+行号显示
 
 ```python title="line-numbers.py" showLineNumbers
 def greet(name):
-    print("Hello!")
-    print(f"Welcome, {name}!")
-    print("We are happy to see you.")
+    print("你好！")
+    print(f"欢迎, {name}!")
+    print("很高兴见到你。")
     return name
 ```
 
-[Rehype Pretty Code](https://rehype-pretty.pages.dev/) is a powerful tool with extensive features and support for [customization](https://rehype-pretty.pages.dev/).
+[Rehype Pretty Code](https://rehype-pretty.pages.dev/)是一个功能强大的工具，支持[自定义配置](https://rehype-pretty.pages.dev/)。
 
-## Tables
+## 表格
 
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
+| 选项   | 描述                                                                 |
+| ------ | ------------------------------------------------------------------- |
+| data   | 数据文件路径，用于提供传递给模板的数据。                             |
+| engine | 用于处理模板的引擎。默认使用Handlebars。                             |
+| ext    | 目标文件使用的扩展名。                                               |
 
-### Table Alignment
+### 表格对齐
 
-| Item         | Price | # In stock |
-| ------------ | :---: | ---------: |
-| Juicy Apples | 1.99  |        739 |
-| Bananas      | 1.89  |          6 |
+| 商品         | 价格  | 库存数量 |
+| ------------ | :---: | -------: |
+| 多汁苹果     | 1.99  |      739 |
+| 香蕉         | 1.89  |        6 |
 
-### Keyboard elements
+### 键盘元素
 
-| Action                | Shortcut                                   |
-| --------------------- | ------------------------------------------ |
-| Vertical split        | <kbd>Alt+Shift++</kbd>                     |
-| Horizontal split      | <kbd>Alt+Shift+-</kbd>                     |
-| Auto split            | <kbd>Alt+Shift+d</kbd>                     |
-| Switch between splits | <kbd>Alt</kbd> + arrow keys                |
-| Resizing a split      | <kbd>Alt+Shift</kbd> + arrow keys          |
-| Close a split         | <kbd>Ctrl+Shift+W</kbd>                    |
-| Maximize a pane       | <kbd>Ctrl+Shift+P</kbd> + Toggle pane zoom |
+| 操作                | 快捷键                                   |
+| ------------------- | ---------------------------------------- |
+| 垂直分割            | <kbd>Alt+Shift++</kbd>                   |
+| 水平分割            | <kbd>Alt+Shift+-</kbd>                   |
+| 自动分割            | <kbd>Alt+Shift+d</kbd>                   |
+| 切换分割区域        | <kbd>Alt</kbd> + 方向键                  |
+| 调整分割区域大小    | <kbd>Alt+Shift</kbd> + 方向键            |
+| 关闭分割区域        | <kbd>Ctrl+Shift+W</kbd>                  |
+| 最大化面板          | <kbd>Ctrl+Shift+P</kbd> + 切换面板缩放   |
 
-## Images
+## 图片
 
-Image in the same folder: `src/content/post/markdown-elements/logo.png`
+同文件夹中的图片：`src/content/post/markdown-elements/logo.png`
 
-![Astro theme citrus logo](./logo.png)
+![Astro主题citrus标志](./logo.png)
 
-## Links
+## 链接
 
-[Content from markdown-it](https://markdown-it.github.io/)
+[markdown-it内容](https://markdown-it.github.io/)

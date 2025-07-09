@@ -119,7 +119,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 export async function GET(context: APIContext) {
   const { pubDate, title } = context.props as Props;
   const postDate = getFormattedDate(pubDate, {
-    month: "long",
+    month: "numeric",
     weekday: "long",
   });
   const svg = await satori(markup(title, postDate), ogOptions);

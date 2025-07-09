@@ -1,117 +1,119 @@
 ---
-title: "Markdown Admonitions"
-description: "This post provides a detailed demonstration of how to use the Markdown admonition feature in Astro Citrus, showcasing its ability to highlight important information, tips, warnings, and other key content types in a visually distinct and customizable format"
-publishDate: "25 Aug 2024"
+title: "Markdown提示框使用指南"
+description: "使用Markdown提示框功能，展示其突出显示重要信息、技巧、警告等关键内容类型的可视化呈现方式"
+publishDate: "2024-08-25"
 seriesId: "markdown-elements"
 orderInSeries: 2
-tags: ["markdown", "admonitions"]
+tags: ["markdown"]
 draft: true
 ---
 
-## What are admonitions
+## 什么是提示框
 
-Admonitions (also known as “asides”) are useful for providing supportive and/or supplementary information related to your content.
+提示框（也称为"侧边说明"）非常适合用于提供与内容相关的辅助性和/或补充性信息。
 
-## How to use them
+## 使用方法
 
-To use admonitions in Astro Citrus, wrap your Markdown content in a pair of triple colons `:::`. The first pair should also include the type of admonition you want to use.
+在Astro Citrus中使用提示框，只需用三重冒号`:::`包裹您的Markdown内容。第一对冒号后需注明提示框类型。
 
-For example, with the following Markdown:
-
-```md
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-```
-
-Outputs:
-
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-## Admonition Types
-
-The following admonitions are currently supported:
-
-- `note`
-- `tip`
-- `important`
-- `warning`
-- `caution`
-
-### Note
+例如：
 
 ```md
 :::note
-Highlights information that users should take into account, even when skimming.
+突出显示即使用户快速浏览也应考虑的信息。
+:::
+```
+
+效果展示：
+
+:::note
+突出显示即使用户快速浏览也应考虑的信息。
+:::
+
+## 提示框类型
+
+当前支持以下提示框类型：
+
+- `note` 普通说明
+- `tip` 实用技巧
+- `important` 重要提示
+- `warning` 警告信息
+- `caution` 注意事项
+
+### 普通说明
+
+```md
+:::note
+突出显示即使用户快速浏览也应考虑的信息。
 :::
 ```
 
 :::note
-Highlights information that users should take into account, even when skimming.
+突出显示即使用户快速浏览也应考虑的信息。
 :::
 
-### Tip
+### 实用技巧
 
 ```md
 :::tip
-Optional information to help a user be more successful.
+帮助用户更高效完成操作的实用建议。
 :::
 ```
 
 :::tip
-Optional information to help a user be more successful.
+帮助用户更高效完成操作的实用建议。
 :::
 
-### Important
+### 重要提示
 
 ```md
 :::important
-Crucial information necessary for users to succeed.
+用户成功操作所必需的关键信息。
 :::
 ```
 
 :::important
-Crucial information necessary for users to succeed.
+用户成功操作所必需的关键信息。
 :::
 
-### Warning
+### 警告信息
 
 ```md
 :::warning
-Critical content demanding immediate user attention due to potential risks.
+因潜在风险需要用户立即关注的关键内容。
 :::
 ```
 
 :::warning
-Critical content demanding immediate user attention due to potential risks.
+因潜在风险需要用户立即关注的关键内容。
 :::
 
-### Caution
+### 注意事项
 
 ```md
 :::caution
-Negative potential consequences of an action.
+操作可能带来的负面后果说明。
 :::
 ```
 
 :::caution
-Negative potential consequences of an action.
+操作可能带来的负面后果说明。
 :::
 
-## Customising the admonition title
+## 自定义标题
 
-You can customise the admonition title using the following markup:
+您可以通过以下语法自定义提示框标题：
 
 ```md
-:::note[My custom title]
-This is a note with a custom title.
+:::note[自定义标题]
+这是一个带有自定义标题的说明框。
 :::
 ```
 
-Outputs:
+效果展示：
 
-:::note[My custom title]
-This is a note with a custom title.
+:::note[自定义标题]
+这是一个带有自定义标题的说明框。
 :::
+
+注：所有提示框样式均采用Astro Citrus主题预设的视觉设计，确保与文档整体风格协调统一。不同类型的提示框使用差异化的颜色和图标系统，便于用户快速识别信息重要性级别。

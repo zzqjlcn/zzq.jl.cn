@@ -24,13 +24,14 @@ const post = defineCollection({
 			ogImage: z.string().optional(),
 			tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
 			publishDate: z
-				.string()
-				.or(z.date())
+				.coerce
+    			.date()
 				.transform((val) => new Date(val)),
 			updatedDate: z
-				.string()
+				.coerce
+    			.date()
 				.optional()
-				.transform((str) => (str ? new Date(str) : undefined)),
+				.transform((val) => (val ? new Date(val) : undefined)),
 			// Series
 			seriesId: z.string().optional(), // Поле для связи с серией
       		orderInSeries: z.number().optional(), // Опционально: для сортировки в серии
