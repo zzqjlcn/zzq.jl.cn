@@ -2,6 +2,7 @@
 title: Wake up...
 publishDate: "2199-02-01T18:26:00Z"
 updateDate: "1998-02-19T14:32:00Z"
+draft: true
 ---
 
 >What is real? How do you define real? If you’re talking about what you can feel, what you can smell, what you can taste and see, then real is simply electrical signals interpreted by your brain.<br> This is the world that you know. The world as it was at the end of the twentieth century. It exists now only as part of a neural-interactive simulation that we call the Matrix. You’ve been living in a dream world.<br> This is the world as it exists today... Welcome... to the desert... of the real.<br>  We have only bits and pieces of information but what we know for certain is that at some point in the early twenty-first century all of mankind was united in celebration. We marveled at our own magnificence as we gave birth to AI.

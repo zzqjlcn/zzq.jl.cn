@@ -5,6 +5,7 @@ description: "Demonstrating the different heading levels in Markdown by showcasi
 featured: false
 tags: ["markdown", "headings", "example", "toc"]
 ogImage: ""
+draft: true
 ---
 
 # Heading Level 1: Exploring the Structure of Long and Short Titles in Markdown

@@ -2,38 +2,59 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	description: "I'm a starter theme for Astro.build",
-	title: "About",
+    description: "Java/Python开发者 | 十年技术沉淀 | 代码与生活随笔",
+    title: "关于",
 };
 ---
 
 <PageLayout meta={meta}>
 
-	<h1 class="title mb-6">About</h1>
-	<div class="prose prose-citrus max-w-none">
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc" role="list">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="citrus-link inline-block"
-				href="https://github.com/artemkutsan/astro-citrus"
-				rel="noreferrer"
-				target="_blank">repo</a
-			> if you like me!
-		</p>
-	</div>
+    <h1 class="title mb-6">关于</h1>
+    <div class="prose prose-citrus max-w-none">
+        <p class="font-medium">
+            Java/Python全栈工程师，十年企业级应用开发经验，专注高并发与分布式系统设计。
+        </p>
+        
+        <div class="my-6 space-y-4">
+            <div class="flex items-start">
+                <div>
+                    <h3 class="font-semibold text-gray-800">技术栈</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">SpringBoot</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">MyBatis</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Astro</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Vue</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-start">
+                <div>
+                    <h3 class="font-semibold text-gray-800">近期探索</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="px-3 py-1 bg-blue-50 rounded-full text-sm">云原生架构</span>
+                        <span class="px-3 py-1 bg-blue-50 rounded-full text-sm">智能体开发</span>
+                        <span class="px-3 py-1 bg-blue-50 rounded-full text-sm">技术写作</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-start">
+                <div>
+                    <h3 class="font-semibold text-gray-800">生活志趣</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="px-3 py-1 bg-amber-50 rounded-full text-sm">AI生成艺术</span>
+                        <span class="px-3 py-1 bg-amber-50 rounded-full text-sm">科技哲学</span>
+                        <span class="px-3 py-1 bg-amber-50 rounded-full text-sm">DNF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="border-t pt-4 italic">
+            相信"代码是理性的诗行"，在这里记录技术洞见、项目复盘，也分享生活与键盘之外的思考痕迹。
+        </p>
+    </div>
 
 </PageLayout>

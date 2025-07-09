@@ -1,6 +1,7 @@
 ---
 title: What is the F-Method in Resume Writing? 
 publishDate: "2025-02-27T22:09:00Z"
+draft: true
 ---
 
 When recruiters review resumes, they spend only a few seconds on the first glance. Research shows that their eyes move across the page in the shape of the letter **F**: first, they read the top line, then scan down while focusing on the left side. This is the principle behind the **F-Method** – a resume formatting technique that helps highlight the most important details.  
