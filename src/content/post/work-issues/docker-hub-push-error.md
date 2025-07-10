@@ -2,7 +2,8 @@
 title: "Docker 镜像拉取问题"
 description: "DockerHub和其它国外的镜像仓库被封，如何万无一失的同步和下载国外的镜像到国内？"
 publishDate: "2025-07-07"
-seriesId: docker-issue
+updatedDate: "2025-07-10"
+seriesId: work-issue
 orderInSeries: 1
 tags: ["docker", "dockerhub", "image"]
 ---
@@ -16,8 +17,8 @@ tags: ["docker", "dockerhub", "image"]
 ## 1. DaoCloud 镜像仓库
 目前测试可行的方案：https://docs.daocloud.io/community/mirror.html
 
-可以使用脚本拉取 `docker-pull.sh`
-```shell
+可以使用脚本拉取
+```shell file="docker-pull.sh"
 #!/bin/bash
 
 img=$1
