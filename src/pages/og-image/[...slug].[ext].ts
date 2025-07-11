@@ -54,7 +54,7 @@ const markup = (title: string, pubDate: string) =>
     >
       <div tw="flex items-center">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           viewBox="0 0 128 128"
           width="64"
           height="64"

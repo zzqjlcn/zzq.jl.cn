@@ -240,7 +240,7 @@ openapi.swagger(app, swagger_js_url=offline.swagger_ui_js, swagger_css_url=offli
 ## 5. 访问地址
 
 ### Swagger UI
-http://localhost:8000/swagger
+/swagger
 
 ### Scalar UI
-http://localhost:8000/scalar
+/scalar
