@@ -34,15 +34,15 @@
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <div class="bg-white rounded-xl shadow-md p-6 mb-8">
             <h1 class="text-2xl font-bold text-gray-800 mb-4">每日热点数据筛选工具</h1>
-            <p class="text-gray-600 mb-6">上传包含 JSON 数组的 .txt 文件，解析并展示内容</p>
+            <p class="text-gray-600 mb-6">上传包含 JSON 数组的 .json 文件，解析并展示内容</p>
             
             <div class="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-8 mb-6 bg-gray-50">
-                <input type="file" id="fileInput" accept=".txt" class="hidden">
+                <input type="file" id="fileInput" accept=".txt, .json" class="hidden">
                 <label for="fileInput" class="cursor-pointer">
                     <div class="flex flex-col items-center">
                         <i class="fas fa-cloud-upload-alt text-4xl text-blue-500 mb-3"></i>
                         <p class="text-gray-700 font-medium mb-2">点击选择文件或拖拽到此处</p>
-                        <p class="text-sm text-gray-500">支持 .txt 文件，内容应为 JSON 数组格式</p>
+                        <p class="text-sm text-gray-500">支持 .json .txt 文件，内容应为 JSON 数组格式</p>
                         <p class="text-sm text-gray-500">[{"title": "", "summary": "", "url": "", "content_original": ""}]</p>
                     </div>
                 </label>
